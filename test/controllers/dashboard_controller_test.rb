@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class DashboardsControllerTest < ActionDispatch::IntegrationTest
   def setup
@@ -7,7 +7,6 @@ class DashboardsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get dashboard" do
-
     get dashboard_url
     assert_response :success
     assert_select "h1", "Twój Dashboard"
@@ -15,6 +14,6 @@ class DashboardsControllerTest < ActionDispatch::IntegrationTest
 
   private
   def sign_in(user)
-    post session_url, params: { email_address: 'one@example.com', password: "password" }
+    post session_url, params: { email_address: "one@example.com", password: "password" }
   end
 end
