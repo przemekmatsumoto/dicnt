@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+ruby "3.3.5"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -52,8 +53,8 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  # RSpec for testing [https://github.com/rspec/rspec-rails]
-  gem "rspec-rails", "~> 7.1", ">= 7.1.1"
+  # Minitest for testing [https://github.com/minitest/minitest]
+  gem "minitest", "~> 5.25", ">= 5.25.4"
 end
 
 group :development do
@@ -65,4 +66,5 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "mocha"
 end
