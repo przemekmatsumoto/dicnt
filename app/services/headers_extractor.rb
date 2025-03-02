@@ -1,5 +1,5 @@
-require 'uri'
-require 'cgi'
+require "uri"
+require "cgi"
 
 class TokenExtractor
   def initialize(driver)
